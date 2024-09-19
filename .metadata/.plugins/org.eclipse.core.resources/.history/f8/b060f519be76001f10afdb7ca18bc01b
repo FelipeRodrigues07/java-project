@@ -1,0 +1,47 @@
+public class Geladeira {
+    private String marca;
+    private int capacidade; 
+    private boolean ligada;
+
+    
+    public Geladeira(String marca, int capacidade) {
+        this.marca = marca;
+        this.capacidade = capacidade;
+        this.ligada = false; 
+    }
+
+    
+    public void ligar() {
+        this.ligada = true;
+        System.out.println("Geladeira ligada.");
+    }
+
+    
+    public void desligar() {
+        this.ligada = false;
+        System.out.println("Geladeira desligada.");
+    }
+
+   
+    public boolean isLigada() {
+        return this.ligada;
+    }
+
+    
+    public void mostrarInfo() {
+        String estado = isLigada() ? "ligada" : "desligada";
+        System.out.println("Marca: " + this.marca);
+        System.out.println("Capacidade: " + this.capacidade + " litros");
+        System.out.println("Estado: " + estado);
+    }
+
+    
+    public static void main(String[] args) {
+        Geladeira geladeira = new Geladeira("Electrolux", 300);
+        geladeira.mostrarInfo();
+        geladeira.ligar();
+        geladeira.mostrarInfo();
+        geladeira.desligar();
+        geladeira.mostrarInfo();
+    }
+}

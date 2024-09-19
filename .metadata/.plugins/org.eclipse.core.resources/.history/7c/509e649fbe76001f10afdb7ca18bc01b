@@ -1,0 +1,54 @@
+package aula;
+
+public class Geladeira {
+    
+    private String marca;
+    private int capacidade; // em litros
+    private boolean ligada;
+
+    // Construtor padrão
+    Geladeira() {
+        marca = "Electrolux";
+        capacidade = 300; // capacidade padrão
+        ligada = false; // inicia desligada
+    }
+
+    // Construtor com parâmetros
+    Geladeira(String m, int c) {
+        marca = m;
+        capacidade = c;
+        ligada = false; // inicia desligada
+    }
+
+    // Método para obter a marca
+    String getMarca() {
+        return marca;
+    }
+
+    // Método para obter a capacidade
+    int getCapacidade() {
+        return capacidade;
+    }
+
+    // Método para ligar a geladeira
+    void ligar() {
+        ligada = true;
+        System.out.println("Geladeira ligada.");
+    }
+
+
+    void desligar() {
+        ligada = false;
+        System.out.println("Geladeira desligada.");
+    }
+
+    public static void main(String[] args) {
+        Geladeira geladeira1 = new Geladeira();
+        Geladeira geladeira2 = new Geladeira("Samsung", 500);
+        Geladeira geladeira3 = new Geladeira("Brastemp", 400);
+        
+        System.out.println("A geladeira geladeira1 é da marca " + geladeira1.getMarca() + " com capacidade de " + geladeira1.getCapacidade() + " litros.");
+        System.out.println("A geladeira geladeira2 é da marca " + geladeira2.getMarca() + " com capacidade de " + geladeira2.getCapacidade() + " litros.");
+        System.out.println("A geladeira geladeira3 é da marca " + geladeira3.getMarca() + " com capacidade de " + geladeira3.getCapacidade() + " litros.");
+    }
+}
