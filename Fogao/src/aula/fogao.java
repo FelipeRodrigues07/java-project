@@ -3,7 +3,7 @@ package aula;
 public class fogao {
     
     private String marca;
-    private int numeroDeBocas;
+    private int numeroDeBocas;''
     private boolean ligado;
 
     

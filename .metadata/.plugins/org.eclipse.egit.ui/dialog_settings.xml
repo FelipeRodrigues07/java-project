@@ -16,6 +16,16 @@
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\Felipe\eclipse-workspace\.git">
+			<item value="false"/>
+			<item value="FelipeRodrigues07 &lt;feliperodriguesrs07@outlook.com&gt;"/>
+			<item value="feat: add atualization in folders"/>
+			<item value="FelipeRodrigues07 &lt;feliperodriguesrs07@outlook.com&gt;"/>
+			<item value="f87341cdb54bc761d2135c60afce4db162d9d50f"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="619"/>

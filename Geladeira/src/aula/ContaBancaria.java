@@ -1,54 +1,31 @@
 package aula;
 
-public class Geladeira {
-    
-    private String marca;
-    private int capacidade; // em litros
-    private boolean ligada;
+public class ContaBancaria {
+    private String numeroConta;
+    private double saldo;
 
-    // Construtor padrão
-    Geladeira() {
-        marca = "Electrolux";
-        capacidade = 300; // capacidade padrão
-        ligada = false; // inicia desligada
+    public ContaBancaria(String numeroConta, double saldoInicial) {
+        this.numeroConta = numeroConta;
+        this.saldo = saldoInicial;
     }
 
-    // Construtor com parâmetros
-    Geladeira(String m, int c) {
-        marca = m;
-        capacidade = c;
-        ligada = false; // inicia desligada
+    public String getNumeroConta() {
+        return numeroConta;
     }
 
-    // Método para obter a marca
-    String getMarca() {
-        return marca;
+    public double getSaldo() {
+        return saldo;
     }
 
-    // Método para obter a capacidade
-    int getCapacidade() {
-        return capacidade;
+    public void depositar(double valor) {
+        saldo += valor;
     }
 
-    // Método para ligar a geladeira
-    void ligar() {
-        ligada = true;
-        System.out.println("Geladeira ligada.");
-    }
-
-    // Método para desligar a geladeira  adsfadfds 
-    void desligar() {
-        ligada = false;
-        System.out.println("Geladeira desligada.");
-    }
-
-    public static void main(String[] args) {
-        Geladeira geladeira1 = new Geladeira();
-        Geladeira geladeira2 = new Geladeira("Samsung", 500);
-        Geladeira geladeira3 = new Geladeira("Brastemp", 400);
-        
-        System.out.println("A geladeira geladeira1 é da marca " + geladeira1.getMarca() + " com capacidade de " + geladeira1.getCapacidade() + " litros.");
-        System.out.println("A geladeira geladeira2 é da marca " + geladeira2.getMarca() + " com capacidade de " + geladeira2.getCapacidade() + " litros.");
-        System.out.println("A geladeira geladeira3 é da marca " + geladeira3.getMarca() + " com capacidade de " + geladeira3.getCapacidade() + " litros.");
+    public void sacar(double valor) {
+        if (valor <= saldo) {
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente.");
+        }
     }
 }
