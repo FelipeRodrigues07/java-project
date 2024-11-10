@@ -1,4 +1,4 @@
-package aula;
+package ProjetoBanco;
 
 public class ContaBancaria {
     private String numeroConta;
