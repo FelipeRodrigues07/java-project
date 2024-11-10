@@ -36,7 +36,7 @@ public class Geladeira {
         System.out.println("Geladeira ligada.");
     }
 
-    // Método para desligar a geladeira
+    // Método para desligar a geladeira  adsfa
     void desligar() {
         ligada = false;
         System.out.println("Geladeira desligada.");
